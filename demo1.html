@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>冒泡排序动画demo1</title>
+    <link rel="stylesheet" href="css/mySort.css">
+    <script src="js/mySort.js"></script>
+</head>
+
+<body>
+
+    <div id="sortContainer"></div>
+
+
+    <script>
+
+
+        var arr = [];
+        for (let index = 0; index < 20; index++) {
+            arr.push(Math.floor(Math.random() * 200));
+        }
+
+        //排序组件可以根据容器大小自适应
+        var sort = new mySort({
+            container: 'sortContainer',//容器
+            arr: arr,//数据
+            sep:10,//各个条目之间的间距
+            speed:500,//排序速度（毫秒）
+            getData: function (arr) {
+                //实时获取排序过程中的数据
+                console.log(arr);
+            }
+        });
+
+        setTimeout(() => {
+            sort.start();
+        }, 1000);
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
