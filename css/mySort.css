@@ -5,6 +5,7 @@
     margin: 0 auto;
     top: 100px;
     border-radius: 8px;
+    position: relative;
 }
 
 #sortContainer1 {
@@ -14,15 +15,9 @@
     margin: 0 auto;
     top: 100px;
     border-radius: 8px;
-}
-
-.sortUl {
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
     position: relative;
 }
+
 
 .item {
     width: 20px;
